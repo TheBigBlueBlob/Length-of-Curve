@@ -12,6 +12,7 @@ if eq == 1:
     c=input("what is c?: ")
     ab=a*b
     bmin=b-1
+    print(ab"x^"bmin)
     
 if eq == 2:
     print("ab^x+c")
@@ -22,6 +23,19 @@ if eq == 2:
 if eq == 3:
     print("a(trig(b))+c")
     at=float(input("what is a?: "))
-    tt=float(input("what trig function? 1=sin, 2=cos, 3=tan: "))
+    tt=int(input("what trig function? 1=sin, 2=cos, 3=tan: "))
     bt=float(input("what is b?: "))
     ct=float(input("what is c?: "))
+
+if eq == 4:
+    print("a(logBASE(b))+c")
+    al=float(input("what is a?: "))
+    ll=float(input("what log base?: "))
+    bl=float(input("what is b?: "))
+    cl=float(input("what is c?: "))
+
+
+
+
+
+
