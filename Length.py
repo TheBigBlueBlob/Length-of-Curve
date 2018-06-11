@@ -1,5 +1,5 @@
 import math
-"""
+
 print('BOOM tetris for jeff')
 eq = int(input("What type of function? 1 for polyomial, 2 for exponential, 3 for trignometric, 4 for logarithm"))
 lower= float(input('what is the lower bound of your arc length?: '))
@@ -38,7 +38,7 @@ if eq == 4:
     ll=float(input("what log base?: "))
     bl=float(input("what is b?: "))
     cl=float(input("what is c?: "))
-"""
+
 
 def f(x):
     return x*x
