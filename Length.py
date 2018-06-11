@@ -10,9 +10,14 @@ if eq == 1:
     a=float(input("what is a?: "))
     b=float(input("what is b?: "))
     c=input("what is c?: ")
+    #Taking Derivative Here
     ab=a*b
     bmin=b-1
-    print(ab"x^"bmin)
+    print("f'(x)= ",ab, "x^", bmin)
+    #Squaring the Derivative here
+    absqr=ab*ab
+    bsqr=bmin*2
+    print("(f'(x))^2= ",absqr,"x^",bsqr)
     
 if eq == 2:
     print("ab^x+c")
