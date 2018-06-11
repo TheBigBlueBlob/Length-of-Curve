@@ -1,18 +1,18 @@
 import math
 
 print('BOOM tetris for jeff')
-eq = int(input("What type of function? 1 for polyomial, 2 for exponential, 3 for trignometric, 4 for logarithm"))
+eq = int(input("What type of function? 1 for polynomial, 2 for exponential, 3 for trignometric, 4 for logarithm"))
 lower= float(input('what is the lower bound of your arc length?: '))
 higher = float(input("What is the upper bound of your arc length?: "))
 
 if eq == 1:
     print("ax^b + c")
-    a=float(input("what is a?: "))
-    b=float(input("what is b?: "))
-    c=input("what is c?: ")
+    ap=float(input("what is a?: "))
+    bp=float(input("what is b?: "))
+    cp=input("what is c?: ")
     #Taking Derivative Here
-    ab=a*b
-    bmin=b-1
+    ab=ap*bp
+    bmin=bp-1
     print("f'(x)= ",ab, "x^", bmin)
     #Squaring the Derivative here
     absqr=ab*ab
@@ -41,7 +41,7 @@ if eq == 4:
 
 
 def f(x):
-    return x*x
+    return math.sqrt(((absqr*x)^bsqr)+1)
 
 def LEN (a,b,n):
     h = (b-a)/n
