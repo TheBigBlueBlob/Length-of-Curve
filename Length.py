@@ -1,5 +1,5 @@
 import math
-
+"""
 print('BOOM tetris for jeff')
 eq = int(input("What type of function? 1 for polyomial, 2 for exponential, 3 for trignometric, 4 for logarithm"))
 lower= float(input('what is the lower bound of your arc length?: '))
@@ -38,9 +38,32 @@ if eq == 4:
     ll=float(input("what log base?: "))
     bl=float(input("what is b?: "))
     cl=float(input("what is c?: "))
+"""
+
+def f(x):
+    return x*x
+
+def LEN (a,b,n):
+    h = (b-a)/n
+    x = a
+    i = 1
+    
+    MRAM = 0.0
+    for i in range(n):
+        if x==b:
+            print("i=",i)
+        else:
+            x1 = a + (i+1)*h
+            MRAM = MRAM + f((x+x1)/2)*h
+            x=x1
+    return "MRAM = {}.".format(MRAM)
 
 
+def main():
+    a = int(input("what is the lower bound of your arc length?: "))
+    b = int(input("what is the upper bound of your arc length?: "))
+    n = int(input("Number of Subintervals: "))
+    print(LEN(a,b,n))
 
-
-
+main()
 
