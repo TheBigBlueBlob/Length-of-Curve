@@ -67,7 +67,7 @@ def main():
     print(LEN(a,b,n))
 
 def f(y):
-    return math.sqrt(natasqr*(be**(2*y))+1)
+    return math.sqrt(natasq*(be**(2*y))+1)
 
 def ENG (a2,b2,n2):
     h2 = (b2-a2)/n2
@@ -144,7 +144,7 @@ def 4main():
 if eq == 1:
     main()
 if eq == 2:
-    2main()
+    main2()
 """
 if eq == 3:
     3main()
