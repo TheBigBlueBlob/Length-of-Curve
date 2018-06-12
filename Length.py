@@ -69,27 +69,27 @@ def main():
 def f(y):
     return math.sqrt(natasqr*(be**(2*y))+1)
 
-def ENG (2a,2b,2n):
-    2h = (2b-2a)/2n
-    y = 2a
-    2i = 1
+def ENG (a2,b2,n2):
+    h2 = (b2-a2)/n2
+    y = a2
+    i2 = 1
     
-    2MRAM = 0.0
-    for 2i in range(2n):
-        if y==2b:
-            print("i=",2i)
+    MRAM2 = 0.0
+    for i2 in range(n2):
+        if y==b2:
+            print("i=",i2)
         else:
-            x2 = 2a + (2i+1)*2h
-            2MRAM = 2MRAM + f((y+x2)/2)*2h
+            x2 = a2 + (i2+1)*h2
+            MRAM2 = MRAM2 + f((y+x2)/2)*h2
             y=x2
-    return "MRAM = {}.".format(2MRAM)
+    return "MRAM = {}.".format(MRAM2)
 
 
-def 2main():
-    2a = int(input("what is the lower bound of your arc length?: "))
-    2b = int(input("what is the upper bound of your arc length?: "))
-    2n = int(input("Number of Subintervals: "))
-    print(ENG(2a,2b,2n))
+def main2():
+    a2 = int(input("what is the lower bound of your arc length?: "))
+    b2 = int(input("what is the upper bound of your arc length?: "))
+    n2 = int(input("Number of Subintervals: "))
+    print(ENG(a2,b2,n2))
 """
 def 3f():
     return math.sqrt((absqr*(x**bsqr))+1)
