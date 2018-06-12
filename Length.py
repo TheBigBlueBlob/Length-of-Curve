@@ -63,5 +63,7 @@ def main():
     n = int(input("Number of Subintervals: "))
     print(LEN(a,b,n))
 
-main()
+
+if eq == 1:
+    main()
 
