@@ -63,6 +63,30 @@ def main():
     n = int(input("Number of Subintervals: "))
     print(LEN(a,b,n))
 
+def 2f(x):
+    return math.sqrt((absqr*(x**bsqr))+1)
+
+def 2LEN (2a,2b,2n):
+    2h = (2b-2a)/2n
+    2x = a
+    2i = 1
+    
+    2MRAM = 0.0
+    for 2i in range(2n):
+        if 2x==2b:
+            print("i=",2i)
+        else:
+            x2 = 2a + (2i+1)*2h
+            2MRAM = 2MRAM + 2f((2x+x2)/2)*2h
+            2x=x2
+    return "MRAM = {}.".format(2MRAM)
+
+
+def main():
+    a = int(input("what is the lower bound of your arc length?: "))
+    b = int(input("what is the upper bound of your arc length?: "))
+    n = int(input("Number of Subintervals: "))
+    print(LEN(a,b,n))
 
 if eq == 1:
     main()
