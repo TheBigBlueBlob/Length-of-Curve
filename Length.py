@@ -66,22 +66,22 @@ def main():
     n = int(input("Number of Subintervals: "))
     print(LEN(a,b,n))
 
-def 2f(x):
-    return math.sqrt(natasqr*(be**(2*2x))+1)
+def f(y):
+    return math.sqrt(natasqr*(be**(2*y))+1)
 
-def 2LEN (2a,2b,2n):
+def ENG (2a,2b,2n):
     2h = (2b-2a)/2n
-    2x = 2a
+    y = 2a
     2i = 1
     
     2MRAM = 0.0
     for 2i in range(2n):
-        if 2x==2b:
+        if y==2b:
             print("i=",2i)
         else:
             x2 = 2a + (2i+1)*2h
-            2MRAM = 2MRAM + 2f((2x+x2)/2)*2h
-            2x=x2
+            2MRAM = 2MRAM + f((y+x2)/2)*2h
+            y=x2
     return "MRAM = {}.".format(2MRAM)
 
 
@@ -89,9 +89,9 @@ def 2main():
     2a = int(input("what is the lower bound of your arc length?: "))
     2b = int(input("what is the upper bound of your arc length?: "))
     2n = int(input("Number of Subintervals: "))
-    print(2LEN(2a,2b,2n))
-
-def 3f(x):
+    print(ENG(2a,2b,2n))
+"""
+def 3f():
     return math.sqrt((absqr*(x**bsqr))+1)
 
 def 3LEN (3a,3b,3n):
@@ -140,13 +140,14 @@ def 4main():
     4b = int(input("what is the upper bound of your arc length?: "))
     4n = int(input("Number of Subintervals: "))
     print(4LEN(4a,4b,4n))
-
+"""
 if eq == 1:
     main()
 if eq == 2:
     2main()
+"""
 if eq == 3:
     3main()
 if eq == 4:
     4main()
-
+"""
