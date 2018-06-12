@@ -22,7 +22,10 @@ if eq == 2:
     ae=float(input("what is a?: "))
     be=float(input("what is b?: "))
     ce=input("what is c?: ")
-    
+    nata= ae*math.log(be)
+    print("f'(x)=",nata, be, "^x")
+    natasq=nata*nata
+    print("(f'(x))^2=", natasq, be, "^2x")
 if eq == 3:
     print("a(trig(b))+c")
     at=float(input("what is a?: "))
@@ -64,7 +67,7 @@ def main():
     print(LEN(a,b,n))
 
 def 2f(x):
-    return math.sqrt((absqr*(x**bsqr))+1)
+    return math.sqrt(natasqr*(be**(2*2x))+1)
 
 def 2LEN (2a,2b,2n):
     2h = (2b-2a)/2n
