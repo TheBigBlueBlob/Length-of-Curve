@@ -39,7 +39,7 @@ if eq == 4:
 
 
 def f(x):
-    return math.sqrt(((absqr*x)**bsqr)+1)
+    return math.sqrt((absqr*(x**bsqr))+1)
 
 def LEN (a,b,n):
     h = (b-a)/n
