@@ -26,13 +26,17 @@ if eq == 2:
     print("f'(x)=",nata, be, "^x")
     natasq=nata*nata
     print("(f'(x))^2=", natasq, be, "^2x")
-if eq == 3:
-    print("a(logBASE(b))+c")
-    al=float(input("what is a?: "))
-    ll=int(input("what trig function? 1=sin, 2=cos, 3=tan: "))
-    bl=float(input("what is b?: "))
-    cl=float(input("what is c?: "))
 
+if eq == 3:
+    print("a(logBASE(x))+c")
+    al=float(input("what is a?: "))
+    bl=float(input("what BASE? "))
+    cl=float(input("what is c?: "))
+    derl = al*(math.log(bl))
+    print("f'(x)=",derl,"/x")
+    dersq= derl*derl
+    print("(f'(x))^2 =",dersq,"/x^2")
+    
 def f(x):
     return math.sqrt((absqr*(x**bsqr))+1)
 
@@ -82,7 +86,7 @@ def main2():
     b2 = int(input("what is the upper bound of your arc length?: "))
     n2 = int(input("Number of Subintervals: "))
     print(ENG(a2,b2,n2))
-
+"""
 def 3f():
     return math.sqrt((absqr*(x**bsqr))+1)
 
@@ -107,11 +111,12 @@ def 3main():
     3b = int(input("what is the upper bound of your arc length?: "))
     3n = int(input("Number of Subintervals: "))
     print(3LEN(3a,3b,3n))
-
+"""
 if eq == 1:
     main()
 if eq == 2:
     main2()
+"""
 if eq == 3:
-    3main()
+    3main() """
 
