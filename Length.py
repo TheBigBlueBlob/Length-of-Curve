@@ -88,7 +88,7 @@ def main2():
     print(ENG(a2,b2,n2))
 
 def f(z):
-    return math.sqrt((dersq/z)+1)
+    return math.sqrt((dersq/z**2)+1)
 
 def LOG (a3,b3,n3):
     h3 = (b3-a3)/n3
