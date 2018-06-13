@@ -32,7 +32,7 @@ if eq == 3:
     al=float(input("what is a?: "))
     bl=float(input("what BASE? "))
     cl=float(input("what is c?: "))
-    derl = al*(math.log(bl))
+    derl = al/(math.log(bl))
     print("f'(x)=",derl,"/x")
     dersq= derl*derl
     print("(f'(x))^2 =",dersq,"/x^2")
@@ -88,7 +88,7 @@ def main2():
     print(ENG(a2,b2,n2))
 
 def f(z):
-    return math.sqrt((dersq/z**2)+1)
+    return math.sqrt(((dersq)/(z*z))+1)
 
 def LOG (a3,b3,n3):
     h3 = (b3-a3)/n3
