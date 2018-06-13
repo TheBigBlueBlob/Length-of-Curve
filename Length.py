@@ -86,37 +86,36 @@ def main2():
     b2 = int(input("what is the upper bound of your arc length?: "))
     n2 = int(input("Number of Subintervals: "))
     print(ENG(a2,b2,n2))
-"""
-def 3f():
+
+def f(z):
     return math.sqrt((absqr*(x**bsqr))+1)
 
-def 3LEN (3a,3b,3n):
-    3h = (3b-3a)/3n
-    3x = 3a
-    3i = 1
+def LOG (a3,b3,n3):
+    h3 = (b3-a3)/n3
+    z = a3
+    i3 = 1
     
-    3MRAM = 0.0
-    for 3i in range(3n):
-        if 3x==3b:
-            print("i=",3i)
+    MRAM3 = 0.0
+    for i3 in range(n3):
+        if z==b3:
+            print("i=",i3)
         else:
-            x3 = 3a + (3i+1)*3h
-            3MRAM = 3MRAM + 3f((3x+x3)/2)*3h
-            3x=x3
-    return "MRAM = {}.".format(3MRAM)
+            x3 = a3 + (i3+1)*h3
+            MRAM3 = MRAM3 + f((z+x3)/2)*h3
+            z=x3
+    return "MRAM = {}.".format(MRAM3)
 
 
-def 3main():
-    3a = int(input("what is the lower bound of your arc length?: "))
-    3b = int(input("what is the upper bound of your arc length?: "))
-    3n = int(input("Number of Subintervals: "))
-    print(3LEN(3a,3b,3n))
-"""
+def main3():
+    a3 = int(input("what is the lower bound of your arc length?: "))
+    b3 = int(input("what is the upper bound of your arc length?: "))
+    n3 = int(input("Number of Subintervals: "))
+    print(LOG(a3,b3,n3))
+
 if eq == 1:
     main()
 if eq == 2:
     main2()
-"""
 if eq == 3:
-    3main() """
+    main3()
 
