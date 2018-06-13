@@ -1,7 +1,7 @@
 import math
 
 print('BOOM tetris for jeff')
-eq = int(input("What type of function? 1 for polynomial, 2 for exponential, 3 for trignometric, 4 for logarithm"))
+eq = int(input("What type of function? 1 for polynomial, 2 for exponential, 3 for logarithm,"))
 
 if eq == 1:
     print("ax^b + c")
@@ -27,19 +27,11 @@ if eq == 2:
     natasq=nata*nata
     print("(f'(x))^2=", natasq, be, "^2x")
 if eq == 3:
-    print("a(trig(b))+c")
-    at=float(input("what is a?: "))
-    tt=int(input("what trig function? 1=sin, 2=cos, 3=tan: "))
-    bt=float(input("what is b?: "))
-    ct=float(input("what is c?: "))
-
-if eq == 4:
     print("a(logBASE(b))+c")
     al=float(input("what is a?: "))
-    ll=float(input("what log base?: "))
+    ll=int(input("what trig function? 1=sin, 2=cos, 3=tan: "))
     bl=float(input("what is b?: "))
     cl=float(input("what is c?: "))
-
 
 def f(x):
     return math.sqrt((absqr*(x**bsqr))+1)
@@ -90,7 +82,7 @@ def main2():
     b2 = int(input("what is the upper bound of your arc length?: "))
     n2 = int(input("Number of Subintervals: "))
     print(ENG(a2,b2,n2))
-"""
+
 def 3f():
     return math.sqrt((absqr*(x**bsqr))+1)
 
@@ -116,38 +108,10 @@ def 3main():
     3n = int(input("Number of Subintervals: "))
     print(3LEN(3a,3b,3n))
 
-def 4f(x):
-    return math.sqrt((absqr*(x**bsqr))+1)
-
-def 4LEN (4a,4b,4n):
-    4h = (4b-4a)/4n
-    4x = 4a
-    4i = 1
-    
-    4MRAM = 0.0
-    for 4i in range(4n):
-        if 4x==4b:
-            print("i=",4i)
-        else:
-            x4 = 4a + (4i+1)*4h
-            4MRAM = 4MRAM + 4f((4x+x4)/2)*4h
-            4x=x4
-    return "MRAM = {}.".format(4MRAM)
-
-
-def 4main():
-    4a = int(input("what is the lower bound of your arc length?: "))
-    4b = int(input("what is the upper bound of your arc length?: "))
-    4n = int(input("Number of Subintervals: "))
-    print(4LEN(4a,4b,4n))
-"""
 if eq == 1:
     main()
 if eq == 2:
     main2()
-"""
 if eq == 3:
     3main()
-if eq == 4:
-    4main()
-"""
+
