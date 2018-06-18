@@ -1,6 +1,6 @@
 import math
 
-print('BOOM tetris for jeff')
+#print('BOOM tetris for jeff')
 eq = int(input("What type of function? 1 for polynomial, 2 for exponential, 3 for logarithm,"))
 
 if eq == 1:
