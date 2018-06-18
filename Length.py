@@ -53,7 +53,7 @@ def LEN (a,b,n):
             x1 = a + (i+1)*h
             MRAM = MRAM + f((x+x1)/2)*h
             x=x1
-    return "Length = {}.".format(MRAM)
+    return "MRAM = {}.".format(MRAM)
 
 
 def main():
@@ -78,7 +78,7 @@ def ENG (a2,b2,n2):
             x2 = a2 + (i2+1)*h2
             MRAM2 = MRAM2 + f((y+x2)/2)*h2
             y=x2
-    return "Length = {}.".format(MRAM2)
+    return "MRAM = {}.".format(MRAM2)
 
 
 def main2():
@@ -103,7 +103,7 @@ def LOG (a3,b3,n3):
             x3 = a3 + (i3+1)*h3
             MRAM3 = MRAM3 + f((z+x3)/2)*h3
             z=x3
-    return "Length = {}.".format(MRAM3)
+    return "MRAM = {}.".format(MRAM3)
 
 
 def main3():
